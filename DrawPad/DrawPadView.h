@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface DrawPadView : UIView{
     NSMutableArray *points;
     NSArray *point_all;
@@ -19,4 +18,5 @@
 @property (strong ,nonatomic) NSArray *points_all;
 @property (strong, nonatomic) UIColor *paint_color;
 @property (assign, nonatomic) CGFloat paint_width;
+
 @end

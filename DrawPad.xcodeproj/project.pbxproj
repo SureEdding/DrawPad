@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04BB34B11B4D3402000CBD3F /* DrawPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB34B01B4D3402000CBD3F /* DrawPadView.m */; };
 		04BB34BA1B4D4606000CBD3F /* DrawStatusChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB34B91B4D4606000CBD3F /* DrawStatusChangeView.m */; };
+		04BB34BC1B4D6FBB000CBD3F /* DrawStatusChangeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BB34BB1B4D6FBB000CBD3F /* DrawStatusChangeView.xib */; };
 		04E9B8031B4AE173009939EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9B8021B4AE173009939EA /* main.m */; };
 		04E9B8061B4AE173009939EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9B8051B4AE173009939EA /* AppDelegate.m */; };
 		04E9B8091B4AE173009939EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9B8081B4AE173009939EA /* ViewController.m */; };
@@ -33,6 +34,7 @@
 		04BB34B01B4D3402000CBD3F /* DrawPadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPadView.m; sourceTree = "<group>"; };
 		04BB34B81B4D4606000CBD3F /* DrawStatusChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawStatusChangeView.h; sourceTree = "<group>"; };
 		04BB34B91B4D4606000CBD3F /* DrawStatusChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawStatusChangeView.m; sourceTree = "<group>"; };
+		04BB34BB1B4D6FBB000CBD3F /* DrawStatusChangeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawStatusChangeView.xib; sourceTree = "<group>"; };
 		04E9B7FD1B4AE173009939EA /* DrawPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E9B8011B4AE173009939EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E9B8021B4AE173009939EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				04BB34B01B4D3402000CBD3F /* DrawPadView.m */,
 				04BB34B81B4D4606000CBD3F /* DrawStatusChangeView.h */,
 				04BB34B91B4D4606000CBD3F /* DrawStatusChangeView.m */,
+				04BB34BB1B4D6FBB000CBD3F /* DrawStatusChangeView.xib */,
 				04E9B80A1B4AE173009939EA /* Main.storyboard */,
 				04E9B80D1B4AE173009939EA /* Images.xcassets */,
 				04E9B80F1B4AE173009939EA /* LaunchScreen.xib */,
@@ -209,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BB34BC1B4D6FBB000CBD3F /* DrawStatusChangeView.xib in Resources */,
 				04E9B80C1B4AE173009939EA /* Main.storyboard in Resources */,
 				04E9B8111B4AE173009939EA /* LaunchScreen.xib in Resources */,
 				04E9B80E1B4AE173009939EA /* Images.xcassets in Resources */,

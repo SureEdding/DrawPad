@@ -8,14 +8,20 @@
 
 #import "DrawStatusChangeView.h"
 
+@interface DrawStatusChangeView()
+@property (strong, nonatomic) IBOutlet UISlider *widthSlider;
+@property (strong, nonatomic) IBOutlet UISlider *blueSlider;
+@property (strong, nonatomic) IBOutlet UISlider *greenSlider;
+@property (strong, nonatomic) IBOutlet UISlider *redSlider;
+
+@end
+
 @implementation DrawStatusChangeView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+- (IBAction)widthDidChanged:(UISlider *)sender {
 }
-*/
+- (IBAction)colorDidChanged:(UISlider *)sender {
+}
 
 @end

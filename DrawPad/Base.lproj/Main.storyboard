@@ -15,28 +15,15 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fO3-Xd-58g" customClass="DrawStatusChangeView">
-                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="eCE-no-kHL"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="fO3-Xd-58g" secondAttribute="bottom" id="jmj-VX-cQo"/>
-                            <constraint firstItem="fO3-Xd-58g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="osS-Mg-4Wd"/>
-                            <constraint firstAttribute="trailing" secondItem="fO3-Xd-58g" secondAttribute="trailing" id="tE8-Bi-ASM"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="drawStatusChangeController" destination="fO3-Xd-58g" id="Wxc-V0-e1K"/>
+                        <outlet property="drawPad" destination="8bC-Xf-vdC" id="2YS-DB-NCI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="279" y="323"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 //
 
 #import "DrawPadView.h"
+#import "DrawStatusChangeView.h"
 
 @implementation DrawPadView
 - (instancetype)initWithFrame:(CGRect)frame{

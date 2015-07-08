@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "DrawPadView.h"
 @interface ViewController ()
+
+@property (strong, nonatomic) DrawPadView *drawPad;
 
 @end
 
@@ -16,7 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    _drawPad = [[DrawPadView alloc] initWithFrame:self.view.bounds];
+
+    [self.view addSubview:_drawPad];
+    
 }
 
 - (void)didReceiveMemoryWarning {

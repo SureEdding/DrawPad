@@ -8,10 +8,11 @@
 
 #import "ViewController.h"
 #import "DrawPadView.h"
+#import "DrawStatusChangeView.h"
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet DrawStatusChangeView *drawStatusChangeController;
 @property (strong, nonatomic) DrawPadView *drawPad;
-
 @end
 
 @implementation ViewController
@@ -20,8 +21,8 @@
     [super viewDidLoad];
 
     _drawPad = [[DrawPadView alloc] initWithFrame:self.view.bounds];
-
-    [self.view addSubview:_drawPad];
+    
+    [self.view insertSubview:_drawPad belowSubview:_drawStatusChangeController];
     
 }
 

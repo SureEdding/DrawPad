@@ -41,12 +41,6 @@
     
     
 }
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    _points = [[NSMutableArray alloc] init];
-    CGPoint touchPoint = [[touches anyObject] locationInView:self];
-    [_points addObject:[NSValue valueWithCGPoint:touchPoint]];
-}
 - (void)drawLineWithArray:(NSArray *)array
 {
     CGPoint beforePoint = [[array objectAtIndex:0] CGPointValue];
@@ -57,9 +51,17 @@
     }
     CGContextStrokePath(context);
 }
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    _points = [[NSMutableArray alloc] init];
+    CGPoint touchPoint = [[touches anyObject] locationInView:self];
+    [_points addObject:[NSValue valueWithCGPoint:touchPoint]];
+}
+
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [_points addObject:[NSValue valueWithCGPoint:[[touches anyObject] locationInView:self]]];
+    NSValue *point = [NSValue valueWithCGPoint:[[touches anyObject] locationInView:self]];
+    [_points addObject:point];
     [self setNeedsDisplay];
 }
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
